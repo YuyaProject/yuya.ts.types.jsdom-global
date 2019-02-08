@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "@types/jsdom-global",
+  "types": "index",
+  "homepage": "https://github.com/YuyaProject/yuya.ts.types.jsdom-global",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyaProject/yuya.ts.types.jsdom-global.git"
+  },
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/YuyaProject/yuya.ts.types.jsdom-global/issues"
+  },
+  "engines": {
+    "node": ">=7.8.0"
+  },
+  "typeScriptVersion": "3.0",
+  "scripts": {
+    "compile-scripts": "tsc -p scripts",
+    "not-needed": "node scripts/not-needed.js",
+    "test": "node node_modules/types-publisher/bin/tester/test.js --run-from-definitely-typed",
+    "lint": "dtslint types"
+  },
+  "devDependencies": {
+    "dtslint": "github:Microsoft/dtslint#production",
+    "types-publisher": "github:Microsoft/types-publisher#production"
+  },
+  "dependencies": {}
+}
